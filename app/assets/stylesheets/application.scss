@@ -1,5 +1,18 @@
 @import "bootstrap";
 
+.btn-primary {
+  background-color: #3AE39F;
+  border-color: #3AE39F;
+}
+.btn-primary:hover {
+  background-color: #1ca355;
+  border-color: #1ca355;
+}
+
+.btn-outline-secondary {
+  color: lightgrey;
+}
+
 .border-test {
   // border: 2px solid black;
   padding-top: 5px;
@@ -12,11 +25,38 @@
   border-radius: 5px;
 }
 
-.resolve-btn a {
-  color: white;
+.resolved-btn {
+  margin-left: 15px;
+}
 
+.resolved-btn a {
+  color: white;
+}
+
+.unresolved-btn a {
+  color: lightgrey;
+}
+
+.unresolved-btn:hover a {
+  color: white;
 }
 
 .ticket-info {
-  margin-top: 20px;
+  margin: 15px;
+}
+
+.ticket-box {
+  margin-top: 15px;
+}
+
+.timer-position {
+  margin-top: 15px;
+}
+
+.ticket-titles {
+  font-weight: bold;
+}
+
+.active-ticket {
+  margin-top: 8px;
 }
