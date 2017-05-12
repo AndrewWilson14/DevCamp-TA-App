@@ -1,8 +1,9 @@
-<div class="container border-test">
+<div class="container border-test block-background">
   <div class="ticket-titles">
     QUEUE
   </div>
-
-    <button data-toggle="collapse" data-target="#demo" class="resolved btn btn-primary resolved-btn">Take Next</button>
-
-  </div>
+    <button data-toggle="collapse" data-target="#demo" class="resolved btn btn-primary btn-block take-next-btn">Take Next</button>
+</div>
+<div class="container border-test">
+  <%= render "users_in_queue" %>
+</div>
