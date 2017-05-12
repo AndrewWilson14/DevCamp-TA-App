@@ -5,14 +5,35 @@
     </div>
 
     <div class="col-md-6 border-test d-flex flex-row">
-        <button data-toggle="collapse" data-target="#demo" class="unresolved btn btn-outline-secondary unresolved-btn">Mark Unresolved</button>
-        <div id="demo" class="collapse form-group">
+      
+        <button data-toggle="collapse" data-target="#unresolved" class="unresolved btn btn-outline-secondary unresolved-btn">Mark Unresolved</button>
 
-
-        </div>
-
-        <button data-toggle="collapse" data-target="#demo" class="resolved btn btn-primary resolved-btn">Resolved</button>
+        <button data-toggle="collapse" data-target="#resolved" class="resolved btn btn-primary resolved-btn">Resolved</button>
     </div>
+
+    <div class="col-md-12">
+       <div class="container">
+          <div id="unresolved" class="collapse form-group">
+            <div class="form-group">
+              <textarea class="form-control" rows="5" id="comment" placeholder="Enter your TA notes here"></textarea>
+            </div>
+             <button data-toggle="collapse" data-target="#resolved" class="resolved btn btn-primary resolved-btn">Cancel</button>
+             <button data-toggle="collapse" data-target="#resolved" class="resolved btn btn-primary resolved-btn">Finish</button>
+          </div>
+        </div> 
+      </div>
+
+      <div class="col-md-12">
+        <div class="container">
+          <div id="resolved" class="collapse form-group">
+            <div class="form-group">
+              <textarea class="form-control" rows="5" id="comment" placeholder="Enter your TA notes here"></textarea>
+            </div>
+             <button data-toggle="collapse" data-target="#resolved" class="resolved btn btn-primary resolved-btn">Cancel</button>
+             <button data-toggle="collapse" data-target="#resolved" class="resolved btn btn-primary resolved-btn">Finish</button>
+          </div>
+        </div> 
+      </div>  
 
     <div class="col-md-12 active-ticket">
       <%= render "pages/ticket_info" %>
