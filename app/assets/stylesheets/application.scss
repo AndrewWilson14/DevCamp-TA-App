@@ -1,5 +1,15 @@
 @import "bootstrap";
 
+body {
+  background-color: #F7F7F7;
+}
+
+.block-background {
+  background-color: white;
+  padding: 20px 10px 20px 10px;
+  border-radius: 15px;
+}
+
 .btn-primary {
   background-color: #3AE39F;
   border-color: #3AE39F;
@@ -14,7 +24,6 @@
 }
 
 .border-test {
-  // border: 2px solid black;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -23,6 +32,9 @@
   border: 2px solid lightgrey;
   margin-top: 10px;
   border-radius: 5px;
+}
+.take-next-btn {
+padding: 20px 0px 20px 0px;
 }
 
 .resolved-btn {
@@ -70,5 +82,13 @@
   color: #9297a0;
   border: 1px solid black;
   border-radius: 3px;
+}
+
+.user_queue {
+  border: 2px solid black;
+}
+
+.queue-block-sizing {
+  padding: 10px 0px 10px 0px;
 }
 

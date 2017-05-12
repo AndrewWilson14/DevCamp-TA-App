@@ -5,6 +5,7 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'queue', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -17,10 +18,12 @@
     <div class="container">
       <div class="row">
         <%= yield %>
-        <div class="col-md-4"></div>
-        <div class="col-md-8">
+      </div>
+      <div class="col-md-4">
+          <%= render "pages/user_queue" %>
+      </div>
+      <div class="col-md-8 block-background">
           <%= render "pages/ticket" %>
-        </div>
       </div>
     </div>
   </body>
