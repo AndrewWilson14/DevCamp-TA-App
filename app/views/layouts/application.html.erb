@@ -9,12 +9,15 @@
   </head>
 
   <body>
-    <%= render "pages/navbar" %>
-    <%= yield %>
+    <div>
+      <% if user_signed_in? %>
+        <%= render "pages/navbar" %>
+      <% end %>
+    </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
-        </div>
+        <%= yield %>
+        <div class="col-md-4"></div>
         <div class="col-md-8">
           <%= render "pages/ticket" %>
         </div>
